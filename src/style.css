@@ -1,0 +1,155 @@
+/* style.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #1e1e1e;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.app-container {
+  background-color: rgba(80, 80, 80, 0.80);
+  height: 100vh;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overlay {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 16px;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.titulo {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #e6d3a1;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #b8c094;
+}
+
+.intro {
+  font-size: 1.2rem;
+  color: #fdf6e3;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.calculadora {
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  color: #fff;
+  text-align: left;
+  font-size: 1rem;
+}
+
+input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #fdf6e3;
+  color: #2e2e2e;
+}
+
+label {
+  font-weight: 600;
+  color: #f9e0ae;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #e4b363;
+  color: #1e1e1e;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #d29b4c;
+}
+
+
+header h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #d2b48c;
+}
+
+/* Área da calculadora */
+.calculadora {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  color: #2e2e2e;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 0.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid #999;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+/* Títulos das seções */
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #5c3d1e;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  color: #444;
+}
+
+/* Resultados */
+.resultado {
+  background-color: #f6f1e7;
+  padding: 1rem;
+  border-radius: 6px;
+  margin-top: 1.5rem;
+  color: #3e2a1b;
+  font-weight: bold;
+  text-align: center;
+}
