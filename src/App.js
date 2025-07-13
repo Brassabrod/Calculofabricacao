@@ -11,6 +11,8 @@ import Header from './components/Header';
 +   <Route path="/custos" element={<BreadCalculator />} />
     <Route path="/premium" element={<PremiumGate />} />
     <Route path="/login" element={<Login />} />
+    <Header />
+
   </Routes>
 
 
