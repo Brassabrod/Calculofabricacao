@@ -7,11 +7,12 @@ import Header from './components/Header';
 
 ...
   <Routes>
+    <Header />
     <Route path="/" element={<Calculadora />} />
 +   <Route path="/custos" element={<BreadCalculator />} />
     <Route path="/premium" element={<PremiumGate />} />
     <Route path="/login" element={<Login />} />
-    <Header />
+    
 
   </Routes>
 
