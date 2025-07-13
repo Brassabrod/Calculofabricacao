@@ -2,6 +2,15 @@ import React, { useState } from "react";
 import "./style.css";
 import "./index.css";
 import Footer from "./Footer"; // Importa o Footer
+import BreadCalculator from './components/BreadCalculator';
+...
+  <Routes>
+    <Route path="/" element={<Calculadora />} />
++   <Route path="/custos" element={<BreadCalculator />} />
+    <Route path="/premium" element={<PremiumGate />} />
+    <Route path="/login" element={<Login />} />
+  </Routes>
+
 
 const LOGO_IMG = "/logo_pao3x4.png";
 
