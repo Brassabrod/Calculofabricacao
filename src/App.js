@@ -3,6 +3,8 @@ import "./style.css";
 import "./index.css";
 import Footer from "./Footer"; // Importa o Footer
 import BreadCalculator from './components/BreadCalculator';
+import Header from './components/Header';
+
 ...
   <Routes>
     <Route path="/" element={<Calculadora />} />
