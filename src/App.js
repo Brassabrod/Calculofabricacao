@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./style.css";
 import "./index.css";
+import Footer from "./Footer"; // Importa o Footer
 
 const LOGO_IMG = "/logo_pao3x4.png";
 
@@ -128,7 +129,6 @@ export default function App() {
             </span>
             Pão Simples
           </h2>
-          {/* Cada campo agora é flex-col, Aviso sempre embaixo */}
           <div className="flex flex-col mb-2">
             <div className="flex items-center">
               <label className="mr-2 font-semibold text-[#b0b0b0] w-[130px]">
@@ -377,31 +377,8 @@ export default function App() {
         </div>
       </main>
 
-      {/* Rodapé com logo centralizado */}
-      <footer className="w-full flex flex-col items-center py-3 z-20 mt-0">
-        <div
-          style={{
-            width: "100%",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center"
-          }}
-        >
-          <img
-            src={LOGO_IMG}
-            alt="Logo Brassabröd"
-            style={{
-              height: "55px",
-              maxWidth: "110px",
-              width: "auto",
-              margin: 0
-            }}
-          />
-        </div>
-        <span className="text-xs text-[#a1813b] font-medium">
-          brassabrod.com.br &copy; {new Date().getFullYear()}
-        </span>
-      </footer>
+      {/* Rodapé com os links das redes sociais */}
+      <Footer />
     </div>
   );
 }
