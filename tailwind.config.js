@@ -8,3 +8,13 @@ module.exports = {
   },
   plugins: [],
 };
+// tailwind.config.js
+module.exports = {
+  theme: {
+    extend: {
+      colors: {
+        brandPurple: '#4a286b',
+      }
+    }
+  }
+}
