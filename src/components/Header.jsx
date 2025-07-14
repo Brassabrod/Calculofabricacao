@@ -20,8 +20,7 @@ export default function Header() {
       <nav className="space-x-6">
         <Link to="/" className="hover:underline">Massa</Link>
         <Link to="/custos" className="hover:underline">Custo Pães</Link>
-        <Link to="/premium" className="hover:underline">Premium</Link>
-        <Link to="/login" className="hover:underline">Login</Link>
+       
       </nav>
     </header>
   );
