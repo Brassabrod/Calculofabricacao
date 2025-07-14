@@ -12,7 +12,7 @@ export default function Header() {
 -         className="h-12"
 -       />
 +       <img
-+         src={`${process.env.PUBLIC_URL}/logo_pao3x4.png`}
++         src={`${process.env.PUBLIC_URL}/logo.png`}
 +         alt="Pão 3x4"
 +         className="h-12"
 +       />
