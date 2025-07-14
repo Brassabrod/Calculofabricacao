@@ -2,15 +2,17 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import "./style.css";
+// seus estilos globais
 import "./index.css";
+import "./style.css";
 
-import Header          from "./components/Header";
-import Footer          from "./components/Footer";
-import Calculadora     from "./components/Calculadora";
-import BreadCalculator from "./components/BreadCalculator";
-import PremiumGate     from "./components/PremiumGate";
-import Login           from "./components/Login";
+// componentes
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Calculadora from "./components/Calculadora";
+import Breadcalculator from "./components/Breadcalculator";
+import PremiumGate from "./components/PremiumGate";
+import Login from "./components/Login";
 
 export default function App() {
   return (
@@ -18,14 +20,13 @@ export default function App() {
       {/* cabeçalho fixo em todas as páginas */}
       <Header />
 
-      {/* conteúdo dinâmico por rota */}
       <Routes>
         <Route path="/" element={<Calculadora />} />
-        <Route path="/custos" element={<BreadCalculator />} />
+        <Route path="/custos" element={<Breadcalculator />} />
         <Route path="/premium" element={<PremiumGate />} />
         <Route path="/login" element={<Login />} />
-        {/* Para rota 404, se quiser:
-            <Route path="*" element={<NotFound />} />
+        {/* exemplo de 404:
+          <Route path="*" element={<NotFound />} />
         */}
       </Routes>
 
