@@ -4,45 +4,24 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 w-full h-16 bg-[#5c3362] shadow-md flex items-center px-6 z-50">
-      {/* Logo no canto esquerdo */}
+    <header className="bg-purple-700 text-white shadow px-6 py-4 flex justify-between items-center">
       <Link to="/">
-        <img
-          src="/logo.png"
-          alt="Pão3x4"
-          className="h-10 object-contain"
-        />
+-       <img
+-         src={`${process.env.PUBLIC_URL}/logo.png`}
+-         alt="Pão 3x4"
+-         className="h-12"
+-       />
++       <img
++         src={`${process.env.PUBLIC_URL}/logo_pao3x4.png`}
++         alt="Pão 3x4"
++         className="h-12"
++       />
       </Link>
-
-      {/* Espaço entre logo e nav */}
-      <div className="flex-1" />
-
-      {/* Navegação no canto direito */}
       <nav className="space-x-6">
-        <Link
-          to="/"
-          className="text-white font-semibold hover:opacity-90 transition"
-        >
-          Massa
-        </Link>
-        <Link
-          to="/custos"
-          className="text-white font-semibold hover:opacity-90 transition"
-        >
-          Custo Pães
-        </Link>
-        <Link
-          to="/premium"
-          className="text-white font-semibold hover:opacity-90 transition"
-        >
-          Premium
-        </Link>
-        <Link
-          to="/login"
-          className="text-white font-semibold hover:opacity-90 transition"
-        >
-          Login
-        </Link>
+        <Link to="/" className="hover:underline">Massa</Link>
+        <Link to="/custos" className="hover:underline">Custo Pães</Link>
+        <Link to="/premium" className="hover:underline">Premium</Link>
+        <Link to="/login" className="hover:underline">Login</Link>
       </nav>
     </header>
   );
